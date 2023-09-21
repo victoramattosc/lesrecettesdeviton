@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   background-color: #fdfefe;
+  padding-top: 40px;
   @media (max-width: $desktop_xsm) {
     padding: 20px $padding-horizontal-mobile;
   }
@@ -53,7 +54,7 @@
     padding: 50px $padding-horizontal-md;
   }
   &__titulo {
-    color: $red;
+    color: #191970	;
     font-size: 3rem;
     margin-bottom: 30px;
   }
@@ -69,6 +70,8 @@
 
 .scrolled {
   background-color: #fafafa; /* Defina a cor de fundo quando o cabeçalho estiver rolado para baixo */
+  border-bottom: 2px solid #d6e6f2;
+
 }
 
 .top {
@@ -76,8 +79,10 @@
   background-color: #fdfefe;
   flex-direction: row;
   transition: background-color 0.3s ease;
-  padding: 30px;
+  padding: 10px;
   position: absolute;
+  align-items: center;
+  width: 100%;
 
   h3{
     font-weight: bold;
@@ -86,9 +91,17 @@
 }
 
 .pages{
-  margin-right: 120px;
+  margin-right: 60px;
 
   :hover{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #d6e6f2;
   }
+}
+
+.icon{
+  border-radius: 10px;
+  width: 50px;
+  height: 40px;
+  margin-right: 60px;
+  margin-left: 30px;
 }

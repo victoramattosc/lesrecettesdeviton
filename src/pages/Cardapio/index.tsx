@@ -1,5 +1,6 @@
 import styles from "./cardapio.module.scss";
 import logo from "assets/header.png";
+import icon from "assets/my-icon.png"
 import Buscador from "./Buscador";
 import Filtros from "./Filtros";
 import { useState, useEffect } from "react";
@@ -23,9 +24,11 @@ export function Cardapio() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <main>
       <div className={`${styles.top} ${scrolled ? styles.scrolled : ""}`}>
+        <img src={icon} alt="icon" className={styles.icon}/>
         <div className={styles.pages}>
           <h3>Home</h3>
         </div>
