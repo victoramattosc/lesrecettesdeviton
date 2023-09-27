@@ -4,7 +4,7 @@
 .menu {
   display: flex;
   justify-content: center;
-  background-color: #fdfefe;
+  background-color: #fff;
   padding-top: 40px;
   @media (max-width: $desktop_xsm) {
     padding: 20px $padding-horizontal-mobile;
@@ -54,7 +54,7 @@
     padding: 50px $padding-horizontal-md;
   }
   &__titulo {
-    color: #191970	;
+    color: #016565	;
     font-size: 3rem;
     margin-bottom: 30px;
   }
@@ -70,7 +70,7 @@
 
 .scrolled {
   background-color: #fafafa; /* Defina a cor de fundo quando o cabeçalho estiver rolado para baixo */
-  border-bottom: 2px solid #d6e6f2;
+  border-bottom: 2px solid #c12f2f;
 
 }
 
@@ -85,16 +85,17 @@
   width: 100%;
 
   h3{
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.5rem;
   }
 }
 
 .pages{
   margin-right: 60px;
+  cursor: pointer;
 
   :hover{
-    border-bottom: 2px solid #d6e6f2;
+    border-bottom: 2px solid #016565;
   }
 }
 
